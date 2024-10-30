@@ -1,0 +1,22 @@
+meta {
+  name: crear nuevo courses
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3001/courses
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title" : "WEBSOCJETS EN JS",
+    "description":"java",
+    "weeks" : 5,
+    "tuition":5,
+    "minimunSkill":"Beginner",
+    "createAt": "2024-03-12"
+  }
+}

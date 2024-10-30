@@ -5,7 +5,13 @@ meta {
 }
 
 put {
-  url: http://localhost:3001/bootcamp/3
-  body: none
+  url: http://localhost:3001/bootcamps/3
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "averageRating": 5
+  }
 }

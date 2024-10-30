@@ -1,0 +1,17 @@
+meta {
+  name: actualizar courses por id
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3001/courses/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tuition": 2
+  }
+}
